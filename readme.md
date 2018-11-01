@@ -5,5 +5,5 @@
 ### 11/1/2018
 
 ### Gamesave.online
- 
+---
 This Web-App is designed to congregate video game discounts and sales across the internet. 
