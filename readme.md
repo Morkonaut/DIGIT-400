@@ -6,4 +6,4 @@
 
 ### Gamesave.online
 ---
-This Web-App is designed to congregate video game discounts and sales across the internet. 
+This Web-App is designed to congregate video game discounts and sales across the internet using Python.
