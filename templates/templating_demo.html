@@ -1,0 +1,60 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<div class="container">
+    <h1>Basic variable output</h1>
+    <p>{{output}}</p>
+
+    <hr>
+
+    <h1>Basic For Loop</h1>
+
+    {% for o in output %}
+        <p>{{o}}</p>
+    {% endfor %}
+
+    <hr>
+
+    <h1>if statement with |int</h1>
+
+        {% if output[4]|int >10 %}
+            <p>{{output[4]}} is greater than 10.</p>
+        {% endif %}
+
+    <hr>
+
+    <h1>.replace() method</h1>
+    <p>{{output[0]|replace('good','AMAZING!!') }}</p>
+
+    <hr>
+    <h1>Loop through a string with .split() and make a list.</h1>
+    
+    <ul>
+        {% for lang in output[1].split('.') %}
+            <li>{{lang}}</li>
+        {% endfor %}
+    </ul>
+    
+    <hr>
+    
+    <h1>Render HTML with "|safe"</h1>
+    
+    {{output[2]|safe}}
+    
+    <hr>
+    
+    <h1>The Raw Operator</h1>
+    
+    {% raw %}
+        <pre>
+        {% for i in items %}
+            {{i}}
+        {% endfor %}
+        </pre>
+    {% endraw %}
+    
+    
+</div>
+
+{% endblock %}
