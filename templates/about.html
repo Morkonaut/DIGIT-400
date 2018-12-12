@@ -1,0 +1,33 @@
+{% extends "header.html" %}
+
+{% block body %}
+    <div class="container bg-light">
+        <br>
+        <h1 style="color:black;justify-content:center;">Welcome to GameSave.Online!</h1>
+        <h2>About the Site</h2>
+        <p>GameSave.Online was designed to aid PC gamers in their search for the best PC game prices across the web. Conglomerating deals from Steam and Green Man Gaming using Pythonic web scraping, GameSave.Online allows you to compare game deals from these two virtual retailers without having to visit them individually.</p>
+        <p>The original scope of the project was meant to compare deals across Steam, The Humble Store, GOG.com, and Green Man Gaming, however, due to some unforseen issues with The Humble Store site and GOG.com, they aren't included in the final product.</p>
+        <hr>
+        
+        <h2>About Web Scraping</h2>
+        
+        <p>Web scraping is the process of using a programming language to comb through websites in order to gather data. Python does this using Beautiful Soup, a library that allows the user to search for specific HTML tags within a website's code. These tags can then be used to gather data from the web page or, in GameSave.Online's case, rendered and reformatted to fit an entirely different web page.</p>
+        <hr>
+        
+        <h2>About the Creator</h2>
+        
+        <p>Hi, my name is Mike Rogan and I'm the creator of GameSave.Online. I’m currently a student of Pennsylvania State University at the Erie campus, majoring in Digital Media, Arts, and Technology. I've been an avid PC gamer for most of my life and GameSave.online is directly inspired by that. I created this web app in the hopes of helping PC gamers in their struggle to find the best 
+        game deals on their platform of choice.</p>
+        <hr>
+        
+        <h2>Future Plans</h2>
+        
+        <p>The future of GameSave.Online in the short-term will be mainly focused around fixing formatting issues and generating clickable links for each game tile that is displayed on the app. In the long-term, goals include adding additional sites to be displayed, moving scraped content to a database for use across the site, and developing a way to easily compare prices for the same game across multiple sites.</p> 
+        <hr>
+        
+        <h2>Links</h2>
+        <a href="https://github.com/Morkonaut/DIGIT-400">Github</a><br>
+        <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup Documentation</a>
+    </div>
+
+{% endblock %}

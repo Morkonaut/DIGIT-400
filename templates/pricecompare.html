@@ -1,0 +1,35 @@
+{% extends "header.html" %}
+
+{% block body %}
+<div class="container">
+    <div class="container">
+        <h1>Deals on Steam</h1>
+    </div>
+
+    <div class="container d-flex flex-wrap bg-light" style="justify-content:center;">
+        {% for title in steamtitle %}
+        <div class="card" style="width:16rem;height:12.5rem">
+            <div class="card-body text-center" style="overflow:hidden;height:15rem;">
+                <h6>{{title|safe}}</h6>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <br>
+    <div class="container">
+        <h1>Deals on Green Man Gaming</h1>
+    </div>
+
+    <div class="container d-flex flex-wrap bg-light" style="justify-content:center;">
+        {% for title in greenmantitle %}
+        <div class="card" style="width:16rem;height:12.5rem;">
+            <div class="card-body text-center" style="overflow:hidden;height:15rem;">
+                <h6>{{title|safe}}</h6>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

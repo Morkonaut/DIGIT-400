@@ -23,7 +23,7 @@
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <!-- HOME CARD -->
         {% for i in APP_CONTENT["Home"] %}
-        <div class="card" style="width: 18rem;">
+        <div class="card bg-dark text-light" style="width: 18rem;">
             <img class="card-img-top" src="{{ url_for('static', filename='res/space_cats.png') }}" alt="SpaceCat">
             <div class="card-body">
                 <h5 class="card-title">{{i[0]}}</h5>
@@ -38,7 +38,7 @@
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <!-- PROFILE CARD -->
         {% for i in APP_CONTENT["Profile"] %}
-        <div class="card" style="width: 18rem;">
+        <div class="card bg-dark text-light" style="width: 18rem;">
             <img class="card-img-top" src="{{ url_for('static', filename='res/space_cats.png') }}" alt="SpaceCat">
             <div class="card-body">
                 <h5 class="card-title">{{i[0]}}</h5>
@@ -53,7 +53,7 @@
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
         <!-- CONTACT CARD -->
         {% for i in APP_CONTENT["Contact"] %}
-        <div class="card" style="width: 18rem;">
+        <div class="card bg-dark text-light" style="width: 18rem;">
             <img class="card-img-top" src="{{ url_for('static', filename='res/space_cats.png') }}" alt="SpaceCat">
             <div class="card-body">
                 <h5 class="card-title">{{i[0]}}</h5>
